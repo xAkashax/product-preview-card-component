@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-component-using-flexbox-Kd68-oVxwT)
 - Live Site URL: [Live Demo](https://jocular-sunburst-ce5a87.netlify.app/)
 
 ## My process
