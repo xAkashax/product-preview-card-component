@@ -16,8 +16,8 @@
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
   list-style: none;
 }
 
@@ -31,66 +31,67 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   width: 100%;
+  min-height: 100vh;
   background-color: var(--cream);
 }
 
 main {
   display: flex;
   flex-direction: column;
-  width: 375px;
   margin: auto 0;
+  width: 375px;
   padding: 0 15px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  background-color: var(--white);
-  border-radius: 10px;
   box-shadow: 0 0 15px 1px hsla(217, 19%, 35%, 0.402);
+  border-radius: 10px;
+  background-color: var(--white);
 }
 
 .header-img {
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+  height: 240px;
   background-image: url(images/image-product-mobile.jpg);
   background-repeat: no-repeat;
   background-attachment: absolute;
   background-size: cover;
   border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  display: block;
-  flex-grow: 1;
-  width: 100%;
-  height: 240px;
+  border-top-right-radius: inherit
 }
 
 .main-card {
-  color: var(--darkGrayishBlue);
-  font-size: 14px;
   padding: 10px 18px;
+  font-size: 14px;
+  color: var(--darkGrayishBlue);
 }
 
 .title {
-  text-transform: uppercase;
-  letter-spacing: 4px;
+  opacity: 0.9;
   padding: 10px 0;
   font-size: 13px;
-  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 h1 {
-  font-family: var(--fraunces);
-  line-height: 1;
-  color: var(--veryDarkBlue);
+
   padding: 0 20px 20px 0;
   font-size: 32px;
+  line-height: 1;
+  font-family: var(--fraunces);
+  color: var(--veryDarkBlue);
 }
 
 .description {
-  line-height: 1.8;
   opacity: 0.9;
   padding: 0;
+  line-height: 1.8;
 }
 
 .summary {
@@ -110,16 +111,16 @@ h1 {
 }
 
 .new {
-  color: var(--darkCyan);
-  font-family: var(--fraunces);
   font-size: 28px;
+  font-family: var(--fraunces);
+  color: var(--darkCyan);
 }
 
 .old {
-  color: var(--darkGrayishBlue);
+  margin: 0 20px 0;
   font-size: 14px;
   text-decoration: line-through;
-  margin: 0 20px 0;
+  color: var(--darkGrayishBlue);
 }
 
 .add-to-cart {
@@ -127,16 +128,16 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  background-color: var(--darkCyan);
-  padding: 20px 20px 20px 0;
   opacity: 0.9;
-  font-weight: var(--fw-700);
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
   border-style: none;
   border-radius: 10px;
+  width: 100%;
+  padding: 20px 20px 20px 0;
+  background-color: var(--darkCyan);
   cursor: pointer;
-  transition: 0.3s ease-in-out;
-  overflow: hidden;
+  font-weight: var(--fw-700);
 }
 
 .cart-img {
@@ -153,13 +154,15 @@ h1 {
   z-index: 3;
   left: 50%;
   top: 50%;
+  transform: translate(-50%, -50%);
   font-size: 14px;
   color: var(--white);
-  transform: translate(-50%, -50%);
 }
+
 .add-to-cart span.txt {
   opacity: 1;
 }
+
 .add-to-cart span.added {
   opacity: 0;
 }
@@ -180,10 +183,12 @@ h1 {
   0% {
     left: 20%;
   }
+
   40%,
   60% {
     left: 50%;
   }
+
   100% {
     left: 110%;
   }
@@ -193,12 +198,15 @@ h1 {
   0% {
     opacity: 1;
   }
+
   20%,
   100% {
     opacity: 0;
   }
 }
+
 @keyframes txt2 {
+
   0%,
   80% {
     opacity: 0;
@@ -229,31 +237,31 @@ h1 {
   }
 
   .header-img {
-    background-image: url(images/image-product-desktop.jpg);
-    background-size: cover;
     border-bottom-left-radius: inherit;
     border-top-right-radius: 0;
     height: auto;
     width: 50%;
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
   }
 
- .card-wrapper {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
- }
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
 
- h1 {
-  padding: 0 0 20px 0;
+  h1 {
+    padding: 0 0 20px 0;
   }
 
   .description {
-    font-size: 15px;
     padding: 0;
+    font-size: 15px;
   }
 
   .add-to-cart:hover {
-    background-color:  hsl(159, 38%, 20%);
+    background-color: hsl(159, 38%, 20%);
   }
 
   .add-to-cart:active {
